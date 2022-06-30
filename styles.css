@@ -1,0 +1,100 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap');
+
+
+/* base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --font-color: rgb(37, 155, 37);
+    --output-color: rgb(41, 222, 41);
+    --error-color: rgb(169, 16, 47);
+}
+
+/* styling */
+
+body {
+    overflow-x: hidden;
+
+    background-color: #111;
+    width: 100vw;
+    height: auto;
+    padding: 8px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.console {
+    border: 2px solid var(--font-color);
+    border-radius: 5px;
+    width: 100vw;
+    min-height: 100vh;
+    height: auto;
+
+    padding: 1em;
+}
+
+.err {
+    color: var(--error-color);
+}
+
+.errorFeedback {
+    background-color: #111;
+
+    outline: none;
+    border: none;
+
+    color: var(--error-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.15em;
+    width: 80vw;
+}
+
+.correctFeedback {
+    background-color: #111;
+
+    outline: none;
+    border: none;
+
+    color: var(--output-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1em;
+    width: 80vw;
+}
+
+.correctCommandLine {
+    background-color: #111;
+
+    outline: none;
+    border: none;
+
+    color: var(--output-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.1em;
+    width: 80vw;
+}
+
+input {
+    background-color: #111;
+
+    outline: none;
+    border: none;
+
+    color: var(--font-color);
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: bold;
+    font-size: 1.15em;
+    width: 80vw;
+}
+
+.err {
+    color: var(--error-color);
+}
